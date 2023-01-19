@@ -20,10 +20,23 @@ body {
 }
 
 .main-content {
-    display: grid;
+    display: inline-grid;
+    background-color: green;
+    grid-template-rows: 50px;
+    grid-template-areas:
+    "title title title";
+    grid-gap: 10px;
+    padding-left: 15px;
 }
 
+.project {
+    background-color: white;
+    grid-template-columns: repeat(3, 300px);
+}
 
+.project-title {
+    grid-area: title;
+}
 
 .sidebar {
     width: 260px;
